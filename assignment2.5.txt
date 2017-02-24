@@ -2,7 +2,7 @@
 
   CLUSTER : 
 
-  * Cluster is a group of servers and resources that act as a single system with high availability ,load balancing and        processing . 
+  * Cluster is a group of servers and resources that act as a single system with high availability ,load balancing and processing . 
 
   * Cluster is a logical unit of file storage on a hard disk .
 
@@ -12,7 +12,7 @@
  
   * The size of the cluster can vary .
 
-  * Cluster is a group of independent servers interconnected through a network to work as a single centralized data         processing resource .
+  * Cluster is a group of independent servers interconnected through a network to work as a single centralized data processing resource .
 
   * It improves performance and fault tolerance .
   
