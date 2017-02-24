@@ -1,0 +1,93 @@
+1. Explain what is a cluster and what is a hadoop cluster
+
+  CLUSTER : 
+
+  * Cluster is a group of servers and resources that act as a single system with high availability ,load balancing and        processing . 
+
+  * Cluster is a logical unit of file storage on a hard disk .
+
+  * It is managed by the computer OS .
+
+  * Cluster is a logical unit more than a physical unit .
+ 
+  * The size of the cluster can vary .
+
+  * Cluster is a group of independent servers interconnected through a network to work as a single centralized data         processing resource .
+
+  * It improves performance and fault tolerance .
+  
+  * Common cluster size is 8 sectors . 
+
+
+
+
+  HADOOP CLUSTER : 
+  
+  * Hadoop is a type of computational cluster used for storing and analysing large unstructured data in a distributed computing environment .
+
+  * It is comprised of three different node types namely master , worker and client nodes . 
+
+  * Master node stores the data in HDFS and running parallel computations . 
+
+  * Worker node is responsible for storing data and running computations .   
+
+  * Client node loads data into cluster, it describes how data should be stored and processed . 
+
+  * It speeds up the processing of data analysis . 
+ 
+
+
+
+2. Explain the components of Hadoop 1.x
+
+
+   The components are Namenode , secondary namenode , datanode , jobtracker and task tracker .
+
+* HDFS: 
+   It is the Hadoop Distributed File System . It is where the big data is stored using comodity hardware.
+
+   NAMENODE :
+ 
+   * It is placed in the master node and stores meta data .
+
+   * This process runs on a cluster . 
+
+   * It reads all metadata from a file named fsimage and stores in memory .
+
+   * It periodically writes the changes to one file named editas edit logs .
+
+  SECONDARY NAMENODE :
+
+  * It can run on a master node or on a seperate node depends on the size of the cluster .
+
+  * It manages the metadata for the name node .  
+
+
+  DATA NODE :
+
+  * They are placed in slave nodes . 
+
+  * It stores data in data slots of 64MB by default . 
+
+  * It periodically sends heart bits to Name node to show that slave process is running .
+
+* MapReduce :
+
+   It is responsible for distibuted computing on hadoop cluster .
+   It uses two daemons named Job Tracker and task Tracker .
+ 
+  JOB TRACKER: 
+
+  * Only one instance of this process runs on a master node same as Name Node .
+
+  * All the mapreduce job is submitted to job tracker.
+
+  * It tracks the location of various files . 
+
+  TASK TRACKER :
+
+  * It executes the tasks that are assigned by job tracker and sends the status of those tasks to job tracker. 
+
+  * In most cases , it initiates the task on the same node where their physical data block is present .
+
+  *It also sends the heart bits to job tracker to make job tracker aware that slave process is running . 
